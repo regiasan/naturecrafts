@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Nature Crafts</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+
+
+<header id="header">
+<div class="content">
+	<div id="logo"><a href="index.html">Nature Crafts</a></div>
+
+	<nav id="nav">
+		<ul>
+			<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+			<li><a href="#slide3" title="Next Section" >Earings</a></li>
+			<li><a href="#slide4" title="Next Section">Bracelets</a></li>
+			<li><a href="#slide6" title="Next Section">Necklaces</a></li>
+      <li><a href="contact.html"  class="small" title="Contact Us">Contact us</a></li>
+			
+		</ul>
+</nav>
+</div>
+</header>	
+<!--HEADER END-->
+
+<!--SLIDES START -->   	
+	<div id="slide1">
+		<div class="content">
+			
+            <h2>Seeds, Woods, Stones you can proudly wear from nature</h2>
+		    <div id="divider"> </div>
+		     <h3>Buy Them Here</h3>
+           <div id="ribbon"></div>
+	    
+		</div> 
+    </div> 
+
+   <div id="slide3">
+		<div class="content">
+			<h1>Earings</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare, dui in ultricies porta, mauris nisl vehicula sapien, eget vulputate mauris neque id ante. Nullam iaculis nibh sit amet semper hendrerit. Morbi mattis velit sed nibh placerat viverra. </p>
+ 			<div class="block-group">
+                <div class="block">
+                   <img src="img/pendientes.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                </div>
+
+                <div class="block">
+                     <img src="img/seeds-earings.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                    
+                </div>
+
+                  <div class="block">
+                     <img src="img/coffe-earings.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                    
+                </div>
+
+            </div>   
+		</div> 
+    </div> 
+	
+	
+  <div id="slide4">
+  	
+		<div class="content">
+			<h1>Bracelets</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare, dui in ultricies porta, mauris nisl vehicula sapien, eget vulputate mauris neque id ante. Nullam iaculis nibh sit amet semper hendrerit. Morbi mattis velit sed nibh placerat viverra. </p>
+ 			<div class="block-group">
+                <div class="block">
+                   <img src="img/pulsera_ojo.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                </div>
+
+                <div class="block">
+                     <img src="img/pulsera-pepa.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                    
+                </div>
+
+                  <div class="block">
+                     <img src="img/pulseras_semillas.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                    
+                </div>
+
+            </div>   
+		</div> 
+    </div>
+	
+	
+	 <div id="slide6">
+  	
+		<div class="content">
+			<h1>Necklaces</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare, dui in ultricies porta, mauris nisl vehicula sapien, eget vulputate mauris neque id ante. Nullam iaculis nibh sit amet semper hendrerit. Morbi mattis velit sed nibh placerat viverra. </p>
+ 			<div class="block-group">
+                <div class="block">
+                   <img src="img/organicas.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                </div>
+
+                <div class="block">
+                     <img src="img/organicas2.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                    
+                </div>
+
+                <div class="block">
+                     <img src="img/organicas3.jpg" width="200">
+                    <a class="btn btn-block" href="#">Buy</a>
+                    
+                </div>
+
+            </div>   
+		</div> 
+    </div>
+	<footer id="footer"	>
+		<div class="copyright"><a href="">Contact Us</a>
+		
+		</div>
+	</footer>
+	
+<!-- SLIDES END -->
+
+</body>
+</html>
